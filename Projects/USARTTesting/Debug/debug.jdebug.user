@@ -1,0 +1,17 @@
+
+OpenDocument="startup_common.s", FilePath="/home/drashid/Embedded/STM32/STM32F446RE/FW/startup/startup_common.s", Line=17
+OpenDocument="main.c", FilePath="/home/drashid/Embedded/STM32/STM32F446RE/Projects/USARTTesting/Src/main.c", Line=17
+OpenDocument="gpio_driver.h", FilePath="/home/drashid/Embedded/STM32/STM32F446RE/Projects/USARTTesting/Inc/gpio_driver.h", Line=107
+OpenDocument="usart_driver.c", FilePath="/home/drashid/Embedded/STM32/STM32F446RE/Projects/USARTTesting/Src/usart_driver.c", Line=218
+OpenDocument="rcc_driver.c", FilePath="/home/drashid/Embedded/STM32/STM32F446RE/Projects/USARTTesting/Src/rcc_driver.c", Line=46
+OpenToolbar="Debug", Floating=0, x=0, y=0
+OpenWindow="Registers 1", DockArea=RIGHT, x=0, y=0, w=429, h=684, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, FilteredItems=[], RefreshRate=1
+OpenWindow="Local Data", DockArea=BOTTOM, x=1, y=0, w=1045, h=256, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Functions", DockArea=LEFT, x=0, y=0, w=455, h=684, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Console", DockArea=BOTTOM, x=0, y=0, w=869, h=256, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+TableHeader="Local Data", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Location";"Size";"Type";"Access";"Scope"], ColWidths=[171;280;100;100;100;100;194]
+TableHeader="Functions", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Address";"Size";"#Insts";"Class";"Source"], ColWidths=[532;100;100;100;100;154]
+TableHeader="Power Sampling", SortCol="Index", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
+TableHeader="Registers 1", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Description"], ColWidths=[181;124;259]
+TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
+TableHeader="TargetExceptionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Address";"Description"], ColWidths=[26;26;26;26]
