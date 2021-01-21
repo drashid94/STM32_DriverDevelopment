@@ -4,26 +4,36 @@
 
 void delay(void)
 {
-	uint32_t i = 0;
-	while(i < 500000)
-	{
-		i++;
-	}
+	for(int i = 0; i < 50000 i++)
 }
+
+
+void GPIO_Init(void)
+{
+	GPIO_Config_t GPIOLED, GPIOBTN;
+
+	//Button Init
+	GPIOBTN.pGPIOx = GPIOB;
+	GPIOBTN.GPIO_PinNumber = GPIO_PIN_5;
+	GPIOBTN.GPIO_Mode = GPIO_MODE_IN;
+	GPIOBTN.GPIO_Speed = GPIO_SPEED_FAST;
+	GPIO_PeriClockControl(&GPIOBTN, ENABLE);
+	
+}
+
 int main(void)
 {
 	GPIO_Config_t GPIOLED,GPIOBTN;
-	GPIOBTN.pGPIOx = GPIOB;
+	
 	GPIOLED.pGPIOx = GPIOA;
-	GPIOBTN.GPIO_PinNumber = GPIO_PIN_5;
+	
 	GPIOLED.GPIO_PinNumber = GPIO_PIN_12;
-	GPIOBTN.GPIO_Mode = GPIO_MODE_IN;
+	
 	GPIOLED.GPIO_Mode = GPIO_MODE_OUT;
 	GPIOLED.GPIO_OutputType = GPIO_OT_PP;
 	GPIOLED.GPIO_PUPD = GPIO_NO_RESISTOR;
-	GPIOBTN.GPIO_Speed = GPIO_SPEED_FAST;
+	
 	GPIOLED.GPIO_Speed = GPIO_SPEED_FAST;
-	GPIO_PeriClockControl(&GPIOBTN, ENABLE);
 	GPIO_PeriClockControl(&GPIOLED, ENABLE);
 	GPIO_Init(&GPIOBTN);
 	GPIO_Init(&GPIOLED);
