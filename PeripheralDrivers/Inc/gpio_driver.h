@@ -4,8 +4,8 @@
 #include "stm32f446xx.h"
 
 //Possinble GPIO Modes 
-#define GPIO_MODE_IN				0
-#define GPIO_MODE_OUT				1
+#define GPIO_MODE_IN			0
+#define GPIO_MODE_OUT			1
 #define GPIO_MODE_ALTFUN		2
 #define GPIO_MODE_ANALOG		3
 #define GPIO_MODE_IT_FT			4
@@ -357,11 +357,11 @@ void GPIO_IRQConfig(uint8_t IRQNumber,  uint8_t ENorDIS)
 		{
 			//Set ISER0 Register (Must dereference the address and set value)
 			*NVIC_ISER0 |= (1 << IRQNumber);
-		}else if(IRQNumber >31 & IRQNumber < 64)
+		}else if(IRQNumber >31 && IRQNumber < 64)
 		{
 			//Set ISER1 Register
 			*NVIC_ISER1 |= (1 << (IRQNumber % 32));
-		}else if(IRQNumber >= 64 & IRQNumber < 96)
+		}else if(IRQNumber >= 64 && IRQNumber < 96)
 		{
 			//SET ISER2 Register
 			*NVIC_ISER2 |= (1 << (IRQNumber % 64));
@@ -372,11 +372,11 @@ void GPIO_IRQConfig(uint8_t IRQNumber,  uint8_t ENorDIS)
 		{
 			//Set ICER0 Register (Must dereference the address and set value)
 			*NVIC_ICER0 |= (1 << IRQNumber);
-		}else if(IRQNumber >31 & IRQNumber < 64)
+		}else if(IRQNumber >31 && IRQNumber < 64)
 		{
 			//Set ICER1 Register
 			*NVIC_ICER1 |= (1 << (IRQNumber % 32));
-		}else if(IRQNumber >= 64 & IRQNumber < 96)
+		}else if(IRQNumber >= 64 && IRQNumber < 96)
 		{
 			//SET ICER2 Register
 			*NVIC_ICER2 |= (1 << (IRQNumber % 64));
